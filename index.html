@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Earnings Call Analyzer">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Earnings Analyzer</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+
+    <style>
+    body { 
+        margin: 0; 
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; 
+        background: #0f172a; 
+        color: #f1f5f9; 
+        padding: 20px;
+        line-height: 1.6;
+    }
+
+    .container {
+        max-width: 900px; 
+        margin: 40px auto;
+    }
+
+    .upload-section { 
+        border: 2px dashed #334155; 
+        padding: 40px; 
+        text-align: center; 
+        margin-bottom: 30px; 
+        border-radius: 12px;
+        background: rgba(30, 41, 59, 0.5);
+        transition: border-color 0.3s ease;
+    }
+
+    .upload-section:hover {
+        border-color: #3b82f6;
+    }
+
+    .analysis-result { 
+        font-weight: 600;
+        font-size: 1.2rem;
+        font-family: sans-serif;
+        border-top: 1px solid #1e293b; 
+        padding-top: 20px; 
+    }
+
+    .speaker { 
+        font-weight: 600; 
+        color: #60a5fa; 
+        display: block; 
+        margin-top: 20px; 
+        font-size: 0.95rem;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+    }
+
+    .sentiment-good { 
+        color: #4ade80; 
+        font-size: 0.85rem; 
+        font-weight: 500;
+    }
+
+    .sentiment-bad { 
+        color: #fb7185; 
+        font-size: 0.85rem; 
+        font-weight: 500;
+    }
+</style>
+</head>
+<body>
+
+<div class="container" style="text-align: center;">
+    <h1>Earnings Call Analyzer</h1>
+    
+    <div class="upload-section">
+        <p>Upload file (supported formats: .pdf, .txt)</p>
+        <button id="customBtn" type="button">Select File</button>
+        
+        <input type="file" id="fileInput" style="display: none;" accept=".pdf,.txt">
+        <div id="fileDisplayArea" style="margin-top: 20px; text-align: center;"></div>
+    
+    </div>
+
+<div class="button-container">
+    <button id="analyzeBtn" type="button" class="analyze-button">Analyze transcript</button>
+</div>
+
+<style>
+    .button-container {
+        text-align: center; 
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 0;
+        margin-right: 0;}
+
+    .analyze-button {
+        font-size: 18px; 
+        padding: 10px 25px;
+        cursor: pointer;
+        background-color: #ffffff;
+        color: rgb(0, 0, 0);
+        border: 2px black solid;
+        border-radius: 5px;
+        transition: background-color 0.2s;
+    }
+
+    .analyze-button:hover {background-color: #a6b9e1;}
+</style>
+
+</div>
+
+
+
+    <div id= "analysis-result" class="analysis-result">
+        <p>Analysis result of earnings call</p>
+    </div>
+    <script src="newjavascript.js"></script>
+</body>
+</html>
