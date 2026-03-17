@@ -1,8 +1,8 @@
-# 📊 Earnings Call Analyzer
+# Earnings Call Analyzer
 
 An AI-powered agent swarm system that analyzes earnings call transcripts and generates comprehensive investment insights using distributed specialist agents.
 
-## 🎯 Overview
+## Overview
 
 This project uses multiple specialized AI agents that collaborate to analyze different aspects of earnings calls:
 - **Revenue Agent**: Analyzes top-line growth, guidance, and customer metrics
@@ -11,7 +11,7 @@ This project uses multiple specialized AI agents that collaborate to analyze dif
 
 The agents communicate through a message bus, challenge each other's findings, and reach consensus on an overall investment verdict.
 
-## ✨ Features
+## Features
 
 - **Multi-Agent Architecture**: Distributed specialists that debate and validate findings
 - **Flexible AI Backend**: Supports Claude API, Ollama (local/free), or demo mode
@@ -20,7 +20,7 @@ The agents communicate through a message bus, challenge each other's findings, a
 - **Comprehensive Scoring**: 0-10 ratings across revenue, profitability, and management
 - **Investment Recommendations**: Clear BUY/HOLD/SELL verdicts with confidence levels
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 
@@ -71,7 +71,7 @@ python -m http.server 8000
 # Then visit http://localhost:8000
 ```
 
-## 📖 Usage
+## Usage
 
 ### Web Interface
 
@@ -107,7 +107,7 @@ python Earnings_Call_Analyzer.py
 # 2. Analyze files or use pre-loaded samples
 ```
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 ┌─────────────────┐
@@ -156,7 +156,7 @@ python Earnings_Call_Analyzer.py
 └─────────────────┘
 ```
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 earnings-analyzer/
@@ -187,7 +187,7 @@ Edit `Earnings_Call_Analyzer.py` to modify:
 - Scoring thresholds for verdicts
 - Prompt templates for each specialist agent
 
-## 🧪 Testing
+## Testing
 
 Run the comprehensive test suite:
 
@@ -202,7 +202,7 @@ This tests:
 - ✅ Full AI analysis pipeline
 - ✅ Error handling
 
-## 📊 Sample Output
+## Sample Output
 
 ```json
 {
@@ -233,7 +233,7 @@ This tests:
 }
 ```
 
-## 🎓 How It Works
+## How It Works
 
 1. **Document Ingestion**: Upload PDF/text transcript
 2. **Parallel Analysis**: Three specialist agents analyze simultaneously
@@ -241,14 +241,14 @@ This tests:
 4. **Consensus Building**: Weighted scoring produces final verdict
 5. **Result Delivery**: Structured JSON with actionable insights
 
-## 🔐 Security Notes
+## Security Notes
 
 - API keys should never be committed to git
 - Use `.gitignore` to exclude sensitive files
 - Consider using environment variables for production
 - CORS is wide open for development - restrict in production
 
-## 🚀 Deployment
+## Deployment
 
 ### Production Setup
 
@@ -271,7 +271,7 @@ ANTHROPIC_API_KEY=your-production-key
 SKIP_PROMPTS=1
 ```
 
-## 🤝 Contributing
+## Contributing
 
 Contributions welcome! Areas for improvement:
 - Additional specialist agents (competitive analysis, risk assessment)
@@ -280,24 +280,15 @@ Contributions welcome! Areas for improvement:
 - Integration with financial data APIs
 - Enhanced visualization of agent debates
 
-## 📝 License
+## License
 
 MIT License - feel free to use for personal or commercial projects
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - Built with Claude 4 and Llama 3.1
 - FastAPI for the backend framework
 - PDF.js for document parsing
 - Anthropic for the AI API
 
-## 📞 Support
 
-For issues or questions:
-1. Check the test suite: `python api.py`
-2. Review console logs (browser F12 + server terminal)
-3. Ensure AI backend is properly configured
-
----
-
-**Built with ❤️ for financial analysis automation**
